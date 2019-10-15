@@ -1,0 +1,7 @@
+$font-haeder-h1: 21px;
+$font-title-par: 36px;
+
+@mixin nomargin-padding() {
+  margin: 0;
+  padding: 0;
+}
