@@ -1,0 +1,17 @@
+.button-menu {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 25px;
+  height: 16px;
+  background: url("../img/burger.png") no-repeat;
+  align-self: center;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1170px) {
+  .button-menu {
+    display: none;
+  }
+}

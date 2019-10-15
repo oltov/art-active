@@ -1,0 +1,64 @@
+.header {
+  @include nomargin-padding();
+  padding-top: 15px;
+  background-color: #8b3dd5;
+  // background-image: url("../img/header-fone.png");
+  // background-repeat: no-repeat;
+  // background-position: center 30px;
+  color: #ffffff;
+}
+
+.header__wrapper {
+  background-image: url("../img/header-fone.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+}
+
+.header__logo {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.header__nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 750px) {
+  .header__wrapper {
+    background-image: url("../img/header-fone-tablet.png");
+    background-position: 2% 30px;
+  }
+
+  .header__nav-wrapper::before {
+    content: "";
+    background: url("../img/mouse-icon.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 31px;
+    top: 500px;
+    left: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1170px) {
+  .header {
+    padding-top: 60px;
+  }
+
+  .header__nav-wrapper::before {
+    top: 845px;
+  }
+
+  .header__wrapper {
+    background-image: url("../img/header-fone-desktop.png");
+    background-position: -90px 100px;
+  }
+
+  .header__nav-wrapper {
+    align-items: center;
+  }
+}

@@ -1,15 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>ARTACTIVE - полиграфия</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/picturefill.js"></script>
+    <link rel="preload" href="fonts/opensansregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="body">
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__nav-wrapper">
+          <a class="header__logo">ARTACTIVE</a>
+          <nav class="nav nav--closed nav--desktop header__nav">
+            <button class="button__close-popup nav__button-close"></button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">О НАС</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">УСЛУГИ</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">ОТЗЫВЫ</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">FAQ</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+            <span class="nav__phone">+7 (920) 148 81 31</span>
+            <button class="button nav__button" type="submit">
+              <span class="button__nav">ЗАКАЗАТЬ ЗВОНОК</span>
+            </button>
+          </nav>
+          <button class="button-menu header__button" type="button"></button>
+        </div>
+        <div class="title header__title">
+          <p class="title__paragraph">
+            РАЗМЕР<br> НЕ ИМЕЕТ ЗНАЧЕНИЯ!
+          </p>
+          <h1 class="title__h1">Оперативная полиграфия и широкоформатная печать
+            любого размера
+          </h1>
+          <div class="title__button-wrapper">
+            <button class="button title__button" type="button">
+              <span class="button__order">ЗАКАЗАТЬ ПЕЧАТЬ</span>
+            </button>
+            <p class="title__go">
+              с доставкой по Ярославлю<br>
+              и Ярославской области
+            </p>
+          </div>
+        </div>
+        <section class="form form-off header__form">
+          <button class="button__close-popup form__button" type="submit"></button>
+          <span class="form__qwestion">Есть вопросы?</span>
+          <h3 class="form__title">Закажите звонок</h3>
+          <form class="form__send">
+            <input class="form__input" type="text" placeholder="Имя" required>
+            <input class="form__input form__input--tel" type="number" placeholder="Телефон" required>
+            <button class="button form__submit" type="submit">
+              <span class="button__submit">ОТПРАВИТЬ</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </header>
+    <main>
+    </main>
     <footer></footer>
+    <div class="page-on"></div>
+    <script src="js/main.js"></script>
   </body>
 </html>
