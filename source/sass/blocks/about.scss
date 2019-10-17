@@ -9,6 +9,7 @@
   font-family: "Muller", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 500;
+  color: #383d52;
 }
 
 .about__paragraph {
@@ -17,5 +18,40 @@
   font-size: 14px;
   line-height: 24px;
   color: #5e606a;
+}
 
+@media (min-width: 1170px) {
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about__inner {
+    flex-basis: 50%;
+    padding-top: 100px;
+    padding-bottom: 155px;
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+
+  .about__h1 {
+    margin: 0;
+  }
+
+  .about__h2 {
+    margin: 0;
+    margin-top: 70px;
+    padding-bottom: 30px;
+    padding-right: 90px;
+    font-size: 32px;
+  }
+
+  .about__paragraph {
+    margin-top: 25px;
+    padding-right: 5px;
+  }
+
+  .about__paragraph:nth-child(3) {
+    padding-right: 20px;
+  }
 }
