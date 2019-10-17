@@ -1,5 +1,5 @@
 * linguist-vendored
-*.html linguist-language=css
+*.html linguist-vendored = false
 
 * text eol=lf
 
