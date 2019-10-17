@@ -1,0 +1,187 @@
+.features {
+  padding-top: 160px;
+  padding-bottom: 54px;
+  font-size: 13px;
+  left: 18px;
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features__item {
+  margin: 0;
+  position: relative;
+  line-height: 18px;
+}
+
+.features__item--icon::before {
+  content: "";
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  background-color: #f0e2ff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  top: -120px;
+  left: 92px;
+}
+
+
+.features__item:nth-child(1) {
+  padding: 0 60px;
+
+  &::before {
+    background-image: url("../img/book.png");
+  }
+  // стрелки между иконками
+  &::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 100px;
+    width: 154px;
+    height: 451px;
+    background: url("../img/cursor-mobile.png") no-repeat;
+  }
+}
+
+.features__item:nth-child(2) {
+  padding-left: 180px;
+  margin-top: 165px;
+
+  &::before {
+    background-image: url("../img/tv.png");
+    left: 183px;
+  }
+}
+
+.features__item:nth-child(3) {
+  padding-right: 160px;
+  margin-top: 40px;
+
+  &::before {
+    background-image: url("../img/XXL.png");
+    left: 10px;
+  }
+}
+
+.features__item:nth-child(4) {
+  padding: 0 80px;
+  margin-top: 170px;
+
+  &::before {
+    background-image: url("../img/moving.png");
+  }
+}
+
+@media (min-width: 750px) {
+  .features {
+    padding-top: 170px;
+    width: 720px;
+  }
+
+  .features__item:nth-child(1) {
+    padding-left: 173px;
+    padding-right: 407px;
+    // margin-top: 165px;
+
+    &::before {
+      left: 190px;
+    }
+    // стрелки между иконками
+    &::after {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 110px;
+      width: 484px;
+      height: 277px;
+      background: url("../img/cursor-tablet.png") no-repeat;
+    }
+  }
+
+  .features__item:nth-child(2) {
+    padding-left: 548px;
+    margin-top: 65px;
+
+    &::before {
+      left: 580px;
+    }
+  }
+
+  .features__item:nth-child(3) {
+    padding-right: 562px;
+    margin-top: 50px;
+
+    &::before {
+      left: 20px;
+    }
+  }
+
+  .features__item:nth-child(4) {
+    padding-left: 390px;
+    padding-right: 210px;
+    margin-top: 70px;
+
+    &::before {
+      left: 394px;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .features {
+    padding-top: 225px;
+    padding-bottom: 147px;
+    flex-basis: 50%;
+  }
+
+  .features__item:nth-child(1) {
+    padding-left: 183px;
+    padding-right: 260px;
+
+    &::before {
+      left: 195px;
+    }
+    // стрелки между иконками
+    &::after {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 110px;
+      width: 316px;
+      height: 268px;
+      background: url("../img/cursor-desktop.png") no-repeat;
+    }
+  }
+
+  .features__item:nth-child(2) {
+    padding-left: 373px;
+    padding-right: 32px;
+    margin-top: 110px;
+
+    &::before {
+      left: 405px;
+    }
+  }
+
+  .features__item:nth-child(3) {
+    padding-right: 420px;
+    margin-top: 5px;
+
+    &::before {
+      left: 22px;
+    }
+  }
+
+  .features__item:nth-child(4) {
+    padding-left: 227px;
+    padding-right: 230px;
+    margin-top: 95px;
+
+    &::before {
+      left: 231px;
+    }
+  }
+}
