@@ -2,7 +2,7 @@
   "name": "art-active",
   "version": "1.0.0",
   "description": "Проект для портфолио",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
