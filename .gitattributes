@@ -1,4 +1,5 @@
-*.rb linguist-language=HTML, CSS
+* linguist-vendored
+*.html linguist-vendored=false
 
 * text eol=lf
 
