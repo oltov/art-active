@@ -1,5 +1,23 @@
 .button {
   // margin: 0;
+  // padding: 0;
+  // border: none;
+  // outline: none;
+  // cursor: pointer;
+  // border-radius: 50px;
+  // background-color: #fb0275;
+  // color: #ffffff;
+  // font-family: "Open Sans", "Arial", sans-serif;
+  // font-size: 16px;
+  // font-weight: 700;
+  // letter-spacing: 0.05em;
+}
+
+.form__send .button {
+  margin-top: 40px;
+}
+
+.button__any {
   padding: 0;
   border: none;
   outline: none;
@@ -11,6 +29,12 @@
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.05em;
+  display: block;
+}
+
+.button__any--submit {
+  margin: 0 auto;
+  padding: 13px 21%;
 }
 
 .button__order {
@@ -37,9 +61,25 @@
   cursor: pointer;
 }
 
+.button__close-popup--off {
+  display: none;
+}
+
 .button__submit {
   display: block;
   padding: 13px 68px;
+}
+
+@media (min-width: 750px) {
+  .button__any--submit {
+    margin: 0;
+    padding: 13px 40px;
+  }
+
+  .form__send .button {
+    margin-top: 0;
+    padding-top: 23px;
+  }
 }
 
 @media (min-width: 1170px) {

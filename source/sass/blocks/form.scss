@@ -3,7 +3,8 @@
   padding-left: 62px;
   padding-bottom: 55px;
   flex-direction: column;
-  position: fixed;
+  color: #ffffff;
+  // position: fixed;
   z-index: 30;
   background-color: #883eca;
   top: calc(50% - 185px);
@@ -12,8 +13,23 @@
   box-shadow: 00 23px 32px 0 rgba(81, 8, 86, 0.33);
 }
 
+.form--faq {
+  margin-top: 53px;
+  padding: 43px 7% 55px 7%;
+  background-image: url("../img/question.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+
+@media (min-width: 340px) and (max-width: 749px) {
+  .form--faq {
+    text-align: center;
+  }
+}
+
 .form-on {
   display: flex;
+  position: fixed;
 }
 
 .form-off {
@@ -23,6 +39,10 @@
 .form__title {
   margin: 0;
   margin-top: 5px;
+
+  @media (width: 320px) {
+    padding-right: 60px;
+  }
 }
 
 .form__button {
@@ -35,14 +55,20 @@
   flex-direction: column;
 }
 
+.form__send--faq {
+  padding-right: 0;
+}
+
 .form__qwestion {
   font-style: italic;
 }
 
 .form__input {
+  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 5px;
-  width: 240px;
+  // width: 240px;
+  width: 75%;
   border: none;
   outline: none;
   color: #ffffff;
@@ -52,6 +78,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
 }
 
 .form__input--tel {
@@ -61,4 +91,31 @@
 
 .form__submit {
   margin-top: 30px;
+}
+
+@media (min-width: 750px) {
+  .form--faq {
+    padding: 44px 4% 50px 4%;
+    background-image: url("../img/question-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right -62px;
+  }
+
+  .form__send--faq {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__input {
+    margin: 0;
+    padding: 46px 0 0 0;
+    width: 180px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .form--faq {
+    padding: 44px 67px 50px 310px;
+    background-position: 30px 0;
+  }
 }

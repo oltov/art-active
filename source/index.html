@@ -25,13 +25,13 @@
                 <a class="nav__link" href="#">ОТЗЫВЫ</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">FAQ</a>
+                <a class="nav__link" href="#faq">FAQ</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#contacts">КОНТАКТЫ</a>
               </li>
             </ul>
-            <span class="nav__phone">+7 (920) 148 81 31</span>
+            <span class="nav__phone">+7 (000) 000 00 00</span>
             <button class="button nav__button" type="submit">
               <span class="button__nav">ЗАКАЗАТЬ ЗВОНОК</span>
             </button>
@@ -63,7 +63,7 @@
             <input class="form__input" type="text" placeholder="Имя" required>
             <input class="form__input form__input--tel" type="number" placeholder="Телефон" required>
             <button class="button form__submit" type="submit">
-              <span class="button__submit">ОТПРАВИТЬ</span>
+              <span class="button__any button__submit">ОТПРАВИТЬ</span>
             </button>
           </form>
         </section>
@@ -105,15 +105,69 @@
           </p>
         </div>
       </section>
+      <section class="faq container">
+        <h3 class="faq__h3" id="faq">4. Частые вопросы (FAQ)</h3>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <p class="faq__title">Что такое макет?</p>
+            <p class="faq__paragraph">
+              Макет — это будущее печатное изделие в электронном формате. Верстают (собирают) макет в специализированном программном обеспечении.
+            </p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">У меня есть готовый макет</p>
+            <p class="faq__paragraph">
+              Вы можете привезти его к нам в офис на любом удобном для вас носителе (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.
+            </p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">У меня нет макета</p>
+            <p class="faq__paragraph">
+              В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.
+            </p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Сколько времени занимает печать?</p>
+            <p class="faq__paragraph">
+              В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время изготовления зависит от нашей загруженности.
+            </p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Я не могу приехать к вам в офис</p>
+            <p class="faq__paragraph">
+              Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.
+            </p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Вызов курьера бесплатный?</p>
+            <p class="faq__paragraph">
+              В зависимости от стоимости заказа, курьер может доставить вам продукцию бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. в пределах Ярославской области.
+            </p>
+          </li>
+        </ul>
+        <div class="form form--faq faq__form">
+          <button class="button__close-popup button__close-popup--off form__button" type="submit"></button>
+          <span class="form__qwestion">Есть вопросы?</span>
+          <h3 class="form__title">Оставьте заявку на консультацию</h3>
+          <form class="form__send form__send--faq">
+            <input class="form__input" type="text" placeholder="Имя" required>
+            <input class="form__input form__input--tel" type="number" placeholder="Телефон" required>
+            <div class="button">
+              <button class="button__any button__any--submit form__submit" type="submit">ОТПРАВИТЬ
+            </button>
+          </div>
+          </form>
+        </div>
+      </section>
       <section class="map">
         <div class="map__inner">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43c7656c4a363cad7ed167b487453bffdfc57b1f9323746b74c818e15a1e9e6d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-        </div>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43c7656c4a363cad7ed167b487453bffdfc57b1f9323746b74c818e15a1e9e6d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
         <div class="map__contacts">
           <h2 class="map__h2" id="contacts">5. Контакты</h2>
-          <p class="map__text map__text--icon">г. Ярославль, проспект Октября, 88</p>
-          <p class="map__text map__text--icon">art-aktiv.76@mail.ru</p>
-          <p class="map__text map__text--icon">+7 (920) 148 81 31</p>
+          <p class="map__text map__text--icon">г. Ярославль, проспект Октября, 00</p>
+          <p class="map__text map__text--icon">почта@mail.ru</p>
+          <p class="map__text map__text--icon">+7 (000) 000 00 00</p>
         </div>
       </section>
     </main>
