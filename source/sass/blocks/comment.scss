@@ -1,0 +1,140 @@
+.comment {
+  padding: 10px 0;
+  padding-bottom: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.comment__title {
+  display: none;
+}
+
+.comment__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.comment__item {
+  padding: 60px 20px 45px;
+  box-shadow: 0 0 10px 0 rgba(81, 8, 86, 0.08);
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex: 0 0 90%;
+  margin: 0 5%;
+}
+
+.comment__paragraph {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5e606a;
+}
+
+.comment__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.comment__user {
+  margin: 0;
+  margin-top: 30px;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #383d52;
+}
+
+.comment__link-user {
+  display: block;
+  line-height: 30px;
+  font-weight: 500;
+  color: #3594dd;
+  text-decoration: none;
+}
+
+.comment__link {
+  position: absolute;
+  cursor: pointer;
+  width: 90px;
+  height: 14px;
+  top: 90%;
+  left: 14%;
+  background: url("../img/left.png") no-repeat;
+}
+
+.comment__link:nth-child(3) {
+  background: url("../img/right.png") no-repeat;
+  width: 92px;
+  left: auto;
+  right: 14%;
+}
+
+@media (min-width: 750px) {
+  .comment__item {
+    display: flex;
+    padding: 60px 62px 45px;
+    flex: 0 0 96%;
+    margin: 0 2%;
+    max-width: 960px;
+  }
+
+  .comment__title {
+    display: block;
+    margin: 0;
+    font-family: "Muller", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #7f38bd;
+  }
+
+  .comment__list {
+    margin-top: 60px;
+  }
+
+  .comment__img {
+    margin-right: 6%;
+  }
+
+  .comment__paragraph {
+    margin: 0;
+  }
+
+  .comment__user {
+    margin-top: 0;
+  }
+
+  .comment__link {
+    top: 80%;
+    left: 5%;
+  }
+
+  .comment__link:nth-child(3) {
+    left: 22%;
+  }
+}
+
+@media (min-width: 1170px) {
+  .comment__list {
+    margin-top: 80px;
+  }
+
+  .comment__item {
+    padding: 60px 85px 45px 76px;
+    flex: 0 0 71%;
+    margin-right: 25px;
+    transform: translateX(15%);
+  }
+
+  .comment__link {
+    top: 420px;
+    left: 14%;
+  }
+
+  .comment__link:nth-child(3) {
+    left: 25%;
+  }
+}
