@@ -1,0 +1,84 @@
+.product {
+  background-color: #faf8fb;
+  position: relative;
+}
+
+.product__inner {
+  padding-top: 68px;
+  padding-bottom: 60px;
+}
+
+.product__h3 {
+  margin: 0;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #383d52;
+}
+
+.product__paragraph {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5e606a;
+  position: relative;
+}
+
+.product__paragraph:nth-child(2) {
+  margin-top: 50px;
+}
+
+.product__paragraph:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 304px;
+  height: 255px;
+  top: 90px;
+  left: calc(50vw - 304px / 2);
+  background: url("../img/letters.png") no-repeat;
+}
+
+@media (min-width: 750px) {
+  .product__inner {
+    padding-top: 110px;
+    padding-bottom: 115px;
+  }
+
+  .product__paragraph:nth-child(3)::before {
+    width: 364px;
+    height: 381px;
+    top: 50px;
+    left: auto;
+    right: 0;
+    background: url("../img/letters-tablet.png") no-repeat;
+  }
+
+  .product__h3 {
+    padding-right: 39%;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .product__inner {
+    padding-top: 142px;
+    padding-bottom: 155px;
+  }
+
+  .product__paragraph:nth-child(3)::before {
+    width: 648px;
+    height: 544px;
+    top: -410px;
+    left: auto;
+    right: -705px;
+    background: url("../img/letters-desktop.png") no-repeat;
+  }
+
+  .product__inner--desktop {
+    padding-right: 585px;
+  }
+
+  .product__h3 {
+    padding-right: 125px;
+  }
+}
