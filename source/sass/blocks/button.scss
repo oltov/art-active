@@ -17,6 +17,10 @@
   margin-top: 40px;
 }
 
+.form__send--product .button {
+  margin-top: 30px;
+}
+
 .button__any {
   padding: 0;
   border: none;
@@ -36,6 +40,12 @@
   margin: 0 auto;
   padding: 13px 21%;
 }
+
+.form__send--product .button__any--submit {
+  margin: 0 auto;
+  padding: 13px 30%;
+}
+
 
 .button__order {
   display: inline-block;
@@ -90,5 +100,10 @@
   .button__order {
     padding: 13px 42px;
     white-space: nowrap;
+  }
+
+  .form__send--product .button__any--submit {
+    margin: 0;
+    padding: 13px 44px;
   }
 }

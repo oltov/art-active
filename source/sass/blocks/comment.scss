@@ -74,6 +74,10 @@
 }
 
 @media (min-width: 750px) {
+  .comment {
+    padding-top: 76px;
+  }
+
   .comment__item {
     display: flex;
     padding: 60px 62px 45px;
