@@ -1,0 +1,91 @@
+.interior {
+  padding-top: 72px;
+  padding-bottom: 250px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 281px;
+    height: 355px;
+    bottom: 55px;
+    right: 0;
+    background: url("../img/sofa-mobile.png") no-repeat;
+    z-index: -1;
+  }
+}
+
+.interior__h3 {
+  margin: 0;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #383d52;
+}
+
+.interior__paragraph {
+  margin: 0;
+  padding: 0;
+  padding-top: 45px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5e606a;
+}
+
+.interior__button {
+  margin-top: 45px;
+}
+
+@media (min-width: 750px) {
+  .interior {
+    padding-bottom: 400px;
+
+    &::before {
+      width: 519px;
+      height: 640px;
+      bottom: 65px;
+      background: url("../img/sofa-tablet.png") no-repeat;
+    }
+  }
+
+  .interior__h3 {
+    font-size: 32px;
+    padding-right: 312px;
+  }
+
+  .interior__paragraph {
+    padding-right: 171px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .interior {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 570px;
+
+    &::before {
+      width: 1276px;
+      height: 813px;
+      bottom: 90px;
+      left: -270px;
+      background: url("../img/sofa-desktop.png") no-repeat;
+    }
+  }
+
+  .interior__h3 {
+    font-size: 32px;
+    padding-right: 140px;
+    padding-left: 585px;
+  }
+
+  .interior__paragraph {
+    padding-right: 0;
+    padding-left: 585px;
+  }
+
+  .interior__button {
+    margin-top: 55px;
+    padding-left: 570px;
+  }
+}
