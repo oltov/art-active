@@ -59,7 +59,6 @@
   font-weight: bold;
 }
 
-
 .button__close-popup {
   display: block;
   padding: 0;
@@ -80,6 +79,11 @@
   padding: 13px 68px;
 }
 
+.button__any--interior {
+  padding: 13px 21%;
+  margin: 0 auto;
+}
+
 @media (min-width: 750px) {
   .button__any--submit {
     margin: 0;
@@ -89,6 +93,11 @@
   .form__send .button {
     margin-top: 0;
     padding-top: 23px;
+  }
+
+  .button__any--interior {
+    padding: 13px 5%;
+    margin: 0;
   }
 }
 
