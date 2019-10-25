@@ -20,7 +20,7 @@
                 <a class="nav__link" href="#about">О НАС</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">УСЛУГИ</a></li>
+                <a class="nav__link" href="#services">УСЛУГИ</a></li>
               <li class="nav__item">
                 <a class="nav__link" href="#comment">ОТЗЫВЫ</a>
               </li>
@@ -105,44 +105,104 @@
           </p>
         </div>
       </section>
-      <section class="interior">
-        <div class="interior__inner container">
-          <h3 class="interior__h3">Широкоформатная печать для вашего интерьера</h3>
-          <p class="interior__paragraph">
-            Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности,
-            на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и
-            редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты
-          </p>
-          <div class="button interior__button">
-            <button class="button__any button__any--interior" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+      <section class="services" id="services">
+        <div class="banner services__item-one">
+          <div class="banner__inner container">
+            <div class="banner__inner-text">
+              <h3 class="banner__h3">1. Услуги</h3>
+              <p class="banner__title">Широкоформатная печать баннеров, растяжек, афиш</p>
+              <ul class="banner__job-list">
+                <li class="banner__job-item">
+                  подготовка макетов к печати, дизайн рекламных баннеров
+                </li>
+                <li class="banner__job-item">
+                  срочная печать за 3 часа
+                </li>
+                <li class="banner__job-item">
+                  проварка карманов и сварка нескольких изображений
+                </li>
+                <li class="banner__job-item">
+                  пробивка люверсов и вварка монтажных тросов
+                </li>
+                <li class="banner__job-item">
+                  изготовление цветопробы
+                </li>
+                <li class="banner__job-item">
+                  доставка баннеров
+                </li>
+              </ul>
+            </div>
+            <ul class="banner__photo-list">
+              <li class="banner__photo-item">
+                <picture class="banner__picture">
+                  <!-- <source type="image/webp" media="(min-width: 1170px)" srcset="img/banner-desktop.webp" 1x>
+                  <source type="image/webp" media="(min-width: 750px)" srcset="img/banner-tablet.webp" 1x>
+                  <source type="image/webp" srcset="img/banner-1.webp" 1x> -->
+                  <source media="(min-width: 1170px)" srcset="img/banner-desktop.jpg" 1x>
+                  <source media="(min-width: 750px)" srcset="img/banner-tablet.jpg" 1x>
+                  <img class="banner__photo" src="img/banner-1.jpg" srcset="img/banner-1.jpg" width="291" height="187" alt="баннер на улице Ленина">
+                </picture>
+                <p class="banner__address">Растяжка на ул. Ленина</p>
+              </li>
+              <li class="banner__photo-item">
+                <img class="banner__photo" src="img/banner-2.jpg" width="291" height="187">
+                <p class="banner__address">Растяжка на ул. Строителей</p>
+              </li>
+              <li class="banner__photo-item">
+                <img class="banner__photo" src="img/banner-1.jpg" width="291" height="187">
+                <p class="banner__address">Растяжка на ул. Надежды</p>
+              </li>
+            </ul>
+            <button class="banner__link" type="button"></button>
+            <button class="banner__link banner__link--right" type="button"></button>
+            <div class="banner__form">
+              <p class="banner__qwestion">Есть вопросы?</p>
+              <p class="banner__paragraph">Закажите консультацию</p>
+                <div class="button bunner__button">
+                  <button class="button__any button__any--services" type="button">ЗАКАЗАТЬ</button>
+                </div>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="product">
-        <div class="product__inner container">
-          <div class="product__inner--desktop">
-            <h3 class="product__h3">Оперативная полиграфия - от визитки до баннера</h3>
-            <p class="product__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <div class="interior">
+          <div class="interior__inner container">
+            <h3 class="interior__h3">Широкоформатная печать для вашего интерьера</h3>
+            <p class="interior__paragraph">
+              Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности,
+              на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и
+              редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты
             </p>
-            <p class="product__paragraph">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Sed ut perspiciatis unde omnis iste natus error.
-            </p>
+            <div class="button interior__button">
+              <button class="button__any button__any--interior" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
           </div>
-          <div class="form form--product product__form">
-          <button class="button__close-popup button__close-popup--off form__button" type="submit"></button>
-          <span class="form__qwestion">Есть вопросы?</span>
-          <h3 class="form__title">Оставьте заявку на консультацию</h3>
-          <form class="form__send form__send--product">
-            <input class="form__input" type="text" placeholder="Имя" required>
-            <input class="form__input form__input--tel" type="number" placeholder="Телефон" required>
-            <div class="button">
-              <button class="button__any button__any--submit form__submit" type="submit">ОТПРАВИТЬ
-            </button>
-          </div>
-          </form>
         </div>
+        <div class="product">
+          <div class="product__inner container">
+            <div class="product__inner--desktop">
+              <h3 class="product__h3">Оперативная полиграфия - от визитки до баннера</h3>
+              <p class="product__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <p class="product__paragraph">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error.
+              </p>
+            </div>
+            <div class="form form--product product__form">
+            <button class="button__close-popup button__close-popup--off form__button" type="submit"></button>
+            <span class="form__qwestion">Есть вопросы?</span>
+            <h3 class="form__title">Оставьте заявку на консультацию</h3>
+            <form class="form__send form__send--product">
+              <input class="form__input" type="text" placeholder="Имя" required>
+              <input class="form__input form__input--tel" type="number" placeholder="Телефон" required>
+              <div class="button">
+                <button class="button__any button__any--submit form__submit" type="submit">ОТПРАВИТЬ
+              </button>
+            </div>
+            </form>
+          </div>
+          </div>
         </div>
       </section>
       <section class="comment container">
@@ -173,8 +233,8 @@
             <a class="comment__link-user" href="#">vk.com/mr.sharp</a>
           </li>
         </ul>
-          <a class="comment__link" href=""></a>
-          <a class="comment__link" href=""></a>
+          <button class="comment__link" type="button"></button>
+          <button class="comment__link" type="button"></button>
       </section>
       <section class="faq container">
         <h3 class="faq__h3" id="faq">4. Частые вопросы (FAQ)</h3>
