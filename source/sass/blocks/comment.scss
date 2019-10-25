@@ -36,6 +36,7 @@
 .comment__img {
   display: block;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .comment__user {
@@ -59,6 +60,7 @@
 .comment__link {
   position: absolute;
   cursor: pointer;
+  border: none;
   width: 90px;
   height: 14px;
   top: 90%;
@@ -80,10 +82,11 @@
 
   .comment__item {
     display: flex;
+    justify-content: space-between;
     padding: 60px 62px 45px;
     flex: 0 0 96%;
     margin: 0 2%;
-    max-width: 960px;
+    max-width: 843px;
   }
 
   .comment__title {
@@ -100,11 +103,16 @@
   }
 
   .comment__img {
-    margin-right: 6%;
+    margin: 0;
+    margin-right: 8%;
+    flex: 1 0 auto;
+    height: max-content;
   }
 
   .comment__paragraph {
     margin: 0;
+    // max-width: 408px;
+    // flex: 1 0 0;
   }
 
   .comment__user {
