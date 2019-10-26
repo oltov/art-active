@@ -79,16 +79,16 @@ gulp.task("refresh", function (done) {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("build", gulp.series(
-  // "webp",
+  "webp",
   "clean",
   "copy",
-  // "images",
+  "images",
   "css",
   "html"
 ));
