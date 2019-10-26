@@ -88,6 +88,7 @@
 
 .form__send--product {
   padding: 0;
+  position: relative;
 }
 
 .form__qwestion {
@@ -146,6 +147,16 @@
     margin-top: 70px;
     padding-right: 64%;
   }
+
+  .form__send--product::before {
+    content: "";
+    position: absolute;
+    width: 118px;
+    height: 258px;
+    top: -88px;
+    right: -120px;
+    background: url("../img/planer-tablet.png") no-repeat;
+  }
 }
 
 @media (min-width: 1170px) {
@@ -155,8 +166,17 @@
   }
 
   .form--product {
-
     padding-right: 375px;
+  }
+
+  .form__send--product::before {
+    content: "";
+    position: absolute;
+    width: 503px;
+    height: 340px;
+    top: -235px;
+    left: 764px;
+    background: url("../img/planer-desktop.png") no-repeat;
   }
 
   .form__send--product {
