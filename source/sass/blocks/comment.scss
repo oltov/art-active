@@ -148,4 +148,9 @@
   .comment__link:nth-child(4) {
     margin-left: 47px;
   }
+
+  .comment__link:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease;
+  }
 }

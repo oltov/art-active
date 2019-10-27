@@ -64,7 +64,6 @@
   margin-top: 25px;
   margin-right: 20px;
   margin-left: 32px;
-  // margin-left: calc((92vw - 291px) / 2);
   cursor: pointer;
   border: none;
   width: 92px;
@@ -201,5 +200,10 @@
 
   .banner__link--right {
     margin-left: 45px;
+  }
+
+  .banner__link:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease;
   }
 }
