@@ -17,6 +17,14 @@
   display: block;
 }
 
+.nav--on {
+  z-index: 20;
+}
+
+.nav--off {
+  z-index: 5;
+}
+
 .nav__button-close {
   margin: 27px 25px 0 auto;
 }

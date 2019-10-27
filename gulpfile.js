@@ -85,10 +85,10 @@ gulp.task("webp", function () {
 });
 
 gulp.task("build", gulp.series(
-  "webp",
+  // "webp",
   "clean",
   "copy",
-  "images",
+  // "images",
   "css",
   "html"
 ));
