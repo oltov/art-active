@@ -19,20 +19,11 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   display: block;
-  // box-shadow: 0 1px 2px #ac1050;
-}
-
-.button__any:hover {
-  box-shadow: 0 3px 5px #e2dddf;
-  // background-color: #d12575;
-  transition: all 0.3s ease;
 }
 
 .button__any:active {
-  background-color: #fb0275;
   transform: scale(0.99);
   box-shadow: 0 3px 5px -3px #e2dddf;
-
   transition: all 0.1s ease;
 }
 
@@ -66,6 +57,12 @@
   margin: 0 auto;
 }
 
+.button__any--interior:active,
+.button__any--submit:active {
+  box-shadow: 0 3px 5px -3px #5f2ac0;
+}
+
+
 .button__any--services {
   padding: 13px 76px;
 }
@@ -80,7 +77,6 @@
 
 .button__any--nav:active {
   background-color: inherit;
-
 }
 
 .button__any--order {
@@ -131,4 +127,15 @@
     font-size: 11px;
     padding: 8px 22px;
   }
+
+  .button__any:hover {
+    box-shadow: 0 3px 5px #e2dddf;
+    transition: all 0.3s ease;
+  }
+
+  .button__any--interior:hover,
+  .button__any--submit:hover {
+    box-shadow: 0 3px 5px #5f2ac0;
+}
+
 }

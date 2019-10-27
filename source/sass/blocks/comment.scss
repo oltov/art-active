@@ -1,5 +1,4 @@
 .comment {
-  // padding: 10px 0;
   padding-top: 10px;
   padding-bottom: 120px;
   overflow: hidden;
@@ -61,13 +60,10 @@
 .comment__link {
   margin-top: 45px;
   margin-left: 9%;
-  // position: absolute;
   cursor: pointer;
   border: none;
   width: 90px;
   height: 14px;
-  // top: 90%;
-  // left: 14%;
   background: url("../img/left.png") no-repeat;
   outline: none;
 }
@@ -91,7 +87,6 @@
     padding: 60px 62px 45px;
     flex: 0 0 96%;
     margin: 0 2%;
-    // margin-right: 150px;
     max-width: 843px;
   }
 
