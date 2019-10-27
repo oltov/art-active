@@ -44,3 +44,15 @@ img {
   height: 100%;
   border: none;
 }
+
+.button-back {
+  position: fixed;
+  color: aqua;
+  background-color: rgba(128, 9, 9, 0.5);
+  cursor: pointer;
+  z-index: 1000;
+  bottom: 0;
+  text-decoration: none;
+  padding: 55px 25px;
+  border-radius: 50%;
+}
