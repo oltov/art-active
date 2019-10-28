@@ -2,9 +2,9 @@
 
 let multiItemSlider = function (selector) {
   let _mainElement = document.querySelector(selector)
-  let _sliderWrapper = _mainElement.querySelector('.comment__list')
-  let _sliderItems = _mainElement.querySelectorAll('.comment__item')
-  let _sliderControls = _mainElement.querySelectorAll('.comment__link')
+  let _sliderWrapper = _mainElement.querySelector('#slider__list')
+  let _sliderItems = _mainElement.querySelectorAll('.slider__item')
+  let _sliderControls = _mainElement.querySelectorAll('.slider__button')
   // let _sliderControlLeft = _mainElement.querySelector('.comment__link-left');
   // let _sliderControlRight = _mainElement.querySelector('.comment__link-right');
   let _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width)
@@ -45,7 +45,7 @@ let multiItemSlider = function (selector) {
   }
 
   let _controlClick = function (e) {
-    let direction = this.classList.contains('comment__link-right') ? 'right' : 'left'
+    let direction = this.classList.contains('slider__link-right') ? 'right' : 'left'
     _transformItem(direction)
   }
 
@@ -59,3 +59,4 @@ let multiItemSlider = function (selector) {
 }
 
 multiItemSlider('.comment')
+multiItemSlider('.services')

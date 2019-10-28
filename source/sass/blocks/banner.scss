@@ -57,6 +57,7 @@
   margin-top: 50px;
   list-style: none;
   display: flex;
+  transition: transform 0.9s ease;
 }
 
 .banner__link {
@@ -167,10 +168,15 @@
     padding: 32px 38px;
   }
 
+  .banner__inner-foto-list {
+    overflow: hidden;
+    flex: 1 0 50%;
+    position: relative;
+  }
+
   .banner__photo-list {
     margin-top: 104px;
-    flex: 1 0 50%;
-    overflow: hidden;
+    padding-bottom: 22px;
   }
 
   .banner__photo-item {
@@ -189,17 +195,20 @@
   }
 
   .banner__address {
-    margin-top: 32px;
+    margin-top: 10px;
     margin-left: 280px;
   }
 
   .banner__link {
-    margin-left: 570px;
-    margin-top: -18px;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 609px;
+    left: 0;
   }
 
   .banner__link--right {
-    margin-left: 45px;
+    left: 135px;
   }
 
   .banner__link:active {
